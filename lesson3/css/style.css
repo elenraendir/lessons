@@ -39,10 +39,9 @@ div {
 	color: #fff;
 	background: #575656;
 	text-decoration: none;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.75); /* Тень текста, чтобы приподнять его*/
 }
 
-.head_menu li a:hover {
+/.head_menu li a:hover {
   color: #fff;
 	background: gray;
 }
@@ -52,7 +51,7 @@ div {
   position: absolute;
   left: -9999px; /*Прячем элементы*/
   opacity: 0; /*Делаем элементы прозрачными*/
-  -webkit-transition: 0.25s linear opacity;
+  -webkit-transition: 0.5s ease-in-out 0.5s;
 }
 
 .head_menu ul li {
@@ -68,13 +67,24 @@ div {
 .head_menu li:hover ul {
   left: 15.2%; /*указываем позицию появляющихся элементов списка*/
   opacity: 1;
+  -webkit-transition: 0.5s ease-in-out 0.5s;
 }
 
 .head_menu li:hover a { /*меняем цвет текста и фона для выделенного элемента*/
   color: black;
   background: white;
   border: 1px solid grey;
+  border-bottom: 0px;
 }
+
+.head_menu li:hover li:last-child a {
+  border: 1px solid gray;
+}
+
+.head_menu li a: {
+  background: black;
+}
+
 
 /*Центральная часть*/
 .main_section {
