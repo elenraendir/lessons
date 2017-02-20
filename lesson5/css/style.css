@@ -21,6 +21,8 @@
   z-index: -6;
 }
 
+/*Верхнее меню*/
+
 .head_menu_back {
   width: 100%;
   height: 40px;
@@ -63,6 +65,10 @@
   background-color: #449cd3;
 }
 
+/*Верхнее меню. Конец*/
+
+/*Центральная форма регистрации*/
+
 .centre_form {
   top: 448px;
   left: 653px;
@@ -88,18 +94,44 @@
   padding: 7px;
 }
 
-.centre_form li input:hover {
+.centre_form li input:hover{ /*Делаем подсветку выбранного поля*/
   color: white;
   background-color: #449cd3;
+  box-shadow:
+    0px 3px 10px 0px #689bcc,
+    0px -3px 10px 0px #689bcc,
+    3px 0px 10px 0px #689bcc,
+    -3px 0px 10px 0px #689bcc;
 }
 
 .centre_form h2 {
   padding-bottom: 20px;
   border-bottom: white 1px solid;
   color: white;
-  font-weight: 400;
 }
 
 .centre_form p {
   color: white;
+  display: inline-block;
+  margin: 0.05em;
 }
+
+/*Приделываем полоску к OU в центральной форме регистрации*/
+
+.centre_form span:before, .centre_form span:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  border-top: 1px solid white;
+  margin-top: 0.5em;
+}
+
+.centre_form span:before {
+  margin-left: 8.5%;
+}
+
+.centre_form span:after {
+  margin-left: -26%;
+}
+
+/*Приделываем полоску к OU в центральной форме регистрации. Конец.*/
