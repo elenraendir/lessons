@@ -10,20 +10,21 @@
 <body>
   <div class= "main"> <!-- Основной контейнер -->
     <div class= "work_space">
-      <div class= "head_menu_back"></div>
+      <!--div class= "head_menu_back"></div-->
       <img src="img/background.jpg" alt="background">
       <div class= "head_menu"> <!-- Верхнее меню -->
-        <ul>
-          <li>Meu YouBike</li>
-          <li>Vender</li>
-          <li>Forum</li>
-          <li>Contato</li>
-          <li>Ajuda</li>
-        </ul>
-        <ul>
-          <li><img src="img/flag.png" alt="flag"><a href="#"></a></li>
-          <li>Ola! <a href="#"> Entrar </a> ou <a href="#"> Cadastre-se</a></li>
-        </ul>
+        <table>
+          <tr>
+            <td><a href="#">Meu YouBike</a></td>
+            <td><a href="#">Vender</a></td>
+            <td><a href="#">Forum</a></td>
+            <td><a href="#">Contato</a></td>
+            <td><a href="#">Ajuda</a></td>
+            <td><span></span></td>
+            <td><img src="img/flag.png" alt="flag"><a href="#"></a></td>
+            <td>Ola! <a href="#"> Entrar</a> ou <a href="#">Cadastre-se</a></td>
+          </tr>
+        </table>
       </div>
       <div class= "centre_form"> <!-- Форма для входа через акк фейсбука, или регистрации -->
         <div> <!-- Заголовок формы -->
@@ -39,9 +40,9 @@
             <li><input type="password" pattern="Choose Password" size="32px"></li>
             <li><input type="password" pattern="Password Confirm" size="32px"></li>
             <li><input type="checkbox" name="sender" value=""><p>Send me Youbike updates and tips</p></li>
-            <li><input type="button" name="Create Account" value="Create Account"></li>
           </ul>
-          <p>By clicking the button above, you agree to the Terms of Service<br>Xiew our Privacy Policy.</p>
+          <input type="button" name="Create Account" value="Create Account" style="width:150px; height:35px; font-size:16px; color:white; border:0px; border-radius:5px; background:linear-gradient(to top, #1b5288, #449cd3)"><br><br>
+          <p class="AllRights">By clicking the button above, you agree to the Terms of Service<br>Xiew our Privacy Policy.</p>
 
         </div>
       </div>

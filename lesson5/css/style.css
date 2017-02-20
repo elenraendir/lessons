@@ -23,46 +23,45 @@
 
 /*Верхнее меню*/
 
-.head_menu_back {
-  width: 100%;
-  height: 40px;
-  position: absolute;
-  background-color: rgb(7, 78, 140);
-  z-index: -5;
-}
-
 .head_menu {
   width: 100%;
-  top: -15px;
+  height: 39px;
   position: absolute;
   float: left;
-
+  background-color: rgb(7, 78, 140);
 }
 
-.head_menu ul {
-  padding-left: 550px;
+.head_menu table {
+  padding-left: 590px;
 }
 
-.head_menu ul li{
+.head_menu table td{
   float: left;
-  margin: 10px;
+  padding: 7px 7px 9px 7px;
   list-style: none;
   color: #3c8ac4;
 }
 
+.head_menu span {
+  border-left: #3c8ac4 1px solid;
+}
+
+.head_menu img {
+  height: 18px;
+}
+
 .head_menu a {
-  text-decoration: none;
   color: #3c8ac4;
 }
 
-.head_menu li:hover {
+.head_menu td:hover {
   color: white;
-  background-color: #449cd3;
+  background:linear-gradient(to top, #1b5288, #449cd3);
 }
 
-.head_menu li a:hover {
+.head_menu td:hover a {
   color: white;
-  background-color: #449cd3;
+  background:linear-gradient(to top, #1b5288, #449cd3)
 }
 
 /*Верхнее меню. Конец*/
@@ -94,7 +93,7 @@
   padding: 7px;
 }
 
-.centre_form li input:hover{ /*Делаем подсветку выбранного поля*/
+.centre_form li input:hover, .centre_form li input:focus { /*Делаем подсветку выбранного поля*/
   color: white;
   background-color: #449cd3;
   box-shadow:
@@ -111,9 +110,15 @@
 }
 
 .centre_form p {
-  color: white;
+  top: -5px;
   display: inline-block;
   margin: 0.05em;
+  font-size: 14px;
+  color: white;
+}
+
+.AllRights {
+  font-size: 10px;
 }
 
 /*Приделываем полоску к OU в центральной форме регистрации*/
