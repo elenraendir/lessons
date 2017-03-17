@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="all">
+    <header>
+      <img src="img/phone.png" alt="phone">
+      <p>(044)123-45-67 (044)567-89-10</p>
+      <div class="pass_in"> <!--Поле входа и регистрации-->
+        <img src="img/avtoriz.png" alt="phone">
+        <input type="text" name="login" value="" placeholder="логин" style="width:100px">
+        <input type="password" name="password" value="" placeholder="пароль" style="width:100px">
+        <p><a href="#">вход</a> | <a href="#">регистрация</a></p>
+        <a href="#">забыли пароль?</a>
+      </div>
+      <div class="icon_map"> <!--Мини карта сайта-->
+        <a href="#"><img src="img/home.png" alt="домик"></a>
+        <a href="#"><img src="img/karta.png" alt="карта"></a>
+        <a href="#"><img src="img/pismo.png" alt="конвертик"></a>
+      </div>
+      <img src="img/header img.png" alt="главная картинка">
+      <div class="header_menu">
+        <ul>
+          <li><a href="#">о компании</a></li>
+          <li><a href="#">оплата</a></li>
+          <li><a href="#">доставка</a></li>
+          <li><a href="#">статьи</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+        <a href="#"><img src="img/korzina.png" alt="корзинка"></a>
+        <p><span>товаров: </span></p><output name="sum" style="padding:10px; position:absolute; font-size:15px; color:#0d5a8f">0</output>
+        <p>на сумму: </p><output name="prace" style="padding:10px; position:absolute; font-size:15px; color:#0d5a8f">0.00 грн.</output>
+      </div>
+    </header>
+
+    <article class="search_forms"> <!--Формы поиска товаров-->
+      <div class="search_car">            <!--Выбор по автомобилю-->
+        <h3>Поиск по автомобилю</h3>
+        <div class= "car_left_part">
+          <legend>Диски:</legend>                <!--Выбор по дискам-->
+          <ul>
+            <li><p><span>Марка </span>авто:</p>
+            <select size="1" style= width:110px></select></li>
+            <li><p><span>Модель </span>автомобиля:</p>
+            <select size="1" style= width:110px></select></li>
+            <li><p><span>Год выпуска </span>автомобиля:</p>
+            <select size="1" style= width:60px></select></li>
+            <li><p><span>Комплектация</span>:</p>
+            <select size="1" style= width:110px></select></li>
+          </ul>
+        </div>
+        <div class= "car_right_part">
+          <legend>Шины:</legend>                      <!--Выбор по шинам-->
+          <ul>
+            <li><p><span>Марка </span>авто:</p>
+            <select size="1" style= width:110px></select></li>
+            <li><p><span>Модель </span>автомобиля:</p>
+            <select size="1" style= width:110px></select></li>
+            <li><p><span>Год выпуска </span>автомобиля:</p>
+            <select size="1" style= width:60px></select></li>
+            <li><p><span>Комплектация</span>:</p>
+            <select size="1" style= width:110px></select></li>
+          </ul>
+        </div>
+        <a href="#">поиск...</a>
+      </div>
+
+      <div class="search_shini">          <!--Выбор по шинам-->
+        <h3>Поиск шин</h3>
+        <ul>
+          <li><p><span>Размер:</span></p>
+            <select size="1" style= width:50px>
+              <option selected value="s1">145</option>
+              <option value="s2">150</option>
+              <option value="s3">160</option>
+              <option value="s4">180</option>
+            </select> / <select size="1" style= width:50px></select></li>
+          <li><p><span>R</span></p>
+            <select size="1" style= width:40px></select></li>
+          <li><p><span>Сезон:</span></p>
+            <ul>
+              <li><input type="checkbox" name="sezon" value="лето"></li>
+              <li><input type="checkbox" name="sezon" value="зима"></li>
+              <li><input type="checkbox" name="sezon" value="всесез"></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="#">поиск...</a>
+      </div>
+
+      <div class="search_diski">         <!--Выбор по дискам-->
+        <h3>Поиск дисков</h3>
+        <div class= "diski_left_part">
+          <ul>
+            <li><p><span>Диаметр </span>диска:</p>
+              <select size="1" style= width:60px></select></li>
+            <li><p><span>Количество </span>крепёжных отверстий:</p>
+              <select size="1" style= width:50px></select></li>
+            <li><p><span>Диаметр </span>расположения крепёжных отверстий:</p>
+              <select size="1" style= width:60px></select></li>
+          </ul>
+        </div>
+        <div class= "diski_right_part">
+          <ul>
+            <li><p><span>ДЦО </span>(диаметр центрального отверстия):</p></li>
+            <li><select size="1" style= width:60px></select></li>
+            <li><p><span>ET </span>(вылет диска):</p></li>
+            <li><select size="1" style= width:60px></select></li>
+          </ul>
+        </div>
+        <a href="#">поиск...</a>
+      </div>                            <!--Формы поиска товаров. Конец.-->
+    </article>
+    <div class="left_search">
+      <div>                       <!--Каталог продукции-->
+        <img src="img/katalog.png" alt="каталог продукции">
+        <p>Каталог продукции:</p>
+      </div>
+      <div>                                    <!--Каталог шин-->
+        <div>
+          <img src="img/katalog_circle.png" alt="кружочек">
+          <p>Шины</p>
+        </div>
+        <ul>
+          <li><a href="#">Наименование1</a></li>
+          <li><a href="#">Наименование2</a></li>
+          <li><a href="#">Наименование3</a></li>
+          <li><a href="#">Наименование4</a></li>
+        </ul>
+      </div>
+      <div>                                    <!--Каталог шин-->
+        <div>
+          <img src="img/katalog_circle.png" alt="кружочек">
+          <p>Диски</p>
+        </div>
+        <ul>
+          <li><a href="#">Наименование1</a></li>
+          <li><a href="#">Наименование2</a></li>
+          <li><a href="#">Наименование3</a></li>
+          <li><a href="#">Наименование4</a></li>
+        </ul>
+      </div>
+      <div>                                    <!--Каталог шин-->
+        <div>
+          <img src="img/katalog_circle.png" alt="кружочек">
+          <p>Болты</p>
+        </div>
+        <ul>
+          <li><a href="#">Наименование1</a></li>
+          <li><a href="#">Наименование2</a></li>
+          <li><a href="#">Наименование3</a></li>
+          <li><a href="#">Наименование4</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right_brands">
+      <div>                       <!--Бренды-->
+        <img src="img/katalog.png" alt="каталог продукции">
+        <p>Бренды:</p>
+      </div>
+      <div>                                    <!--Бренды шин-->
+        <div>
+          <img src="img/katalog_circle.png" alt="кружочек">
+          <p>Шины</p>
+        </div>
+        <ul>
+          <li><input type="checkbox" name="Бренд1" value=""></li>
+          <li><input type="checkbox" name="Бренд2" value=""></li>
+          <li><input type="checkbox" name="Бренд3" value=""></li>
+        </ul>
+      </div>
+      <div>                                    <!--Бренды дисков-->
+        <div>
+          <img src="img/katalog_circle.png" alt="кружочек">
+          <p>Диски</p>
+        </div>
+        <ul>
+          <li><input type="checkbox" name="Бренд1" value=""></li>
+          <li><input type="checkbox" name="Бренд2" value=""></li>
+          <li><input type="checkbox" name="Бренд3" value=""></li>
+        </ul>
+      </div>
+      <button type="button" name="button">Выбрать</button>
+    </div>
+    <div class="main_cenrte">
+     <img src="" alt="">
+
+    </div>
+  </div>
+
+</body>
+</html>

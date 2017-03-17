@@ -1,0 +1,331 @@
+.all {
+  position: absolute;
+  left: 25%;
+  width: 908px;
+  font-family: Tahoma, sans-serif;
+}
+
+/*верхняя строка входа и регистрации*/
+header {
+  float: left;
+  margin: 0px;
+}
+
+header img {
+  float: left;
+}
+
+header img:last-child {
+  padding: 15px;
+}
+
+header p {
+  margin: 4px;
+  width: 220px;
+  float: left;
+  font-size: 15px;
+}
+
+header input {
+  float: left;
+  margin: 2px;
+}
+
+.pass_in {
+  position: absolute;
+  margin-left: 250px;
+  padding: 3px;
+  height: 27px;
+  background: linear-gradient(to top, #0d3458, #1f6685);
+  border-radius: 5px;
+}
+
+.pass_in img {
+  padding: 2px;
+}
+
+.pass_in input {
+  float: left;
+}
+
+.pass_in p {
+  float: left;
+  width: 140px;
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+}
+
+.pass_in a {
+  padding: 5px;
+  font-size: 13px;
+  color: white;
+}
+
+.pass_in p a {
+  text-decoration: none;
+}
+
+.icon_map a {
+  float: right;
+}
+
+/*верхняя строка входа и регистрациию Конец*/
+
+/*верхнее меню навигации*/
+
+.header_menu {
+  margin-top: 300px;
+  height: 40px;
+  background: linear-gradient(to top, #010101, #464d54);
+  border-radius: 5px;
+}
+
+.header_menu ul li:first-of-type {
+  margin-left: 80px;
+}
+
+.header_menu ul li {
+  float: left;
+  padding: 10px 10px 10px 10px;
+  list-style: none;
+}
+
+.header_menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header_menu li:hover {
+  background: linear-gradient(to top, #0d3458, #1f6787);
+  border-radius: 20px;
+}
+
+.header_menu img:last-child {
+  padding: 12px;
+}
+
+.header_menu p {
+  float: left;
+  margin-left: 20px;
+  padding: 8px 10px 0px 10px;
+  width: 60px;
+  font-size: 13px;
+  color: white;
+}
+
+.header_menu p:first-of-type {
+  width: 40px;
+  padding-right: 10px;
+}
+/*верхнее меню навигации. Конец*/
+
+                                       /*Фрмы поиска*/
+.search_forms div {
+  float: left;
+  margin: 5px;
+  padding: 5px;
+}
+
+.search_forms p {
+  width: 70px;
+  float: left;
+  font-size: 8px;
+  color: grey;
+}
+
+.search_forms span {
+  font-size: 10px;
+  color: black;
+}
+
+.search_forms legend {
+  font-size: 12px;
+  font-weight: bold;
+  color: #154467;
+}
+
+.search_forms a {
+  float: right;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.search_forms h3 {
+  position: absolute;
+  padding: 0px;
+  margin-top: 3px;
+  width: 420px;
+  font-size: 14px;
+  text-align: center;
+  color: #154467;
+}
+
+.search_forms ul {
+  padding-left: 10px;
+  min-width: 80px;
+  list-style-type: none;
+}
+
+.search_forms li {
+  float: left;
+  width: 200px;
+  height: 25px;
+}
+
+.search_forms select {
+  float: left;
+}
+
+.search_forms div:first-of-type {
+  margin-left: 0px;
+}
+
+.search_forms div:last-of-type {
+  margin-right: 0px;
+}
+
+
+/*Форма поиска по машине*/
+.search_car {
+  width: 420px;
+  border: 1px solid #a3a3a4;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+}
+
+.search_car div {
+  margin-left: 5px;
+  width: 200px;
+  height: 122px;
+  padding: 0px;
+}
+
+.car_left_part {
+  float: left;
+}
+
+.car_right_part {
+  float: right;
+}
+
+.car_right_part legend {
+  float: right;
+  padding-bottom: 16px;
+}
+
+/*Поиск по шинам*/
+.search_shini {
+  float: left;
+  width: 170px;
+  height: 149px;
+  border: 1px solid #a3a3a4;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+}
+
+.search_shini div {
+  margin-left: 5px;
+  padding: 0px;
+  float left;
+}
+
+.search_shini h3 {
+  float: left;
+  width: 170px;
+  text-align: left;
+}
+
+.search_shini ul {
+  margin-top: 30px;
+}
+
+.search_shini li {
+  width: 150px;
+}
+
+.search_shini li select:nth-last-of-type(2) {
+  float: right;
+}
+
+.search_shini p {
+  width: 42px;
+}
+
+/*Поиск по дискам*/
+.search_diski {
+  float: left;
+  width: 262px;
+  height: 149px;
+  border: 1px solid #a3a3a4;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+}
+
+.search_diski div {
+  margin-left: 5px;
+  padding: 0px;
+  width: 120px;
+  float left;
+}
+
+.search_diski h3 {
+  float: left;
+  width: 262px;
+  text-align: left;
+}
+
+.search_diski li {
+  height: auto;
+}
+
+.search_diski li p {
+  vertical-align: middle;
+}
+
+
+.search_diski ul:last-of-type {
+  border-left: 1px solid black;
+}
+
+.diski_left_part ul {
+  margin-top: 30px;
+}
+
+.diski_right_part ul {
+  margin: 0px 0px 0px 10px;
+}
+
+.diski_right_part {
+  float: right;
+}
+
+/*Каталоги слева*/
+.left_search {
+  width: 170px;
+  float: left;
+}
+
+.left_search img {
+  float: left;
+}
+
+/*Бренды*/
+.right_brands {
+  width: 130px;
+  float: right;
+}
+
+.right_brands img {
+  float: left;
+}
+
+/*Центральная чать*/
+.main_cenrte {
+  width: 526px;
+  height: 900px;
+  float: left;
+  border: 1px solid black;
+  background: linear-gradient(to bottom, #a3a3a4, #1f6787);
+}
