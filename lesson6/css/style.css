@@ -1,6 +1,6 @@
 .all {
   position: absolute;
-  left: 25%;
+  transform: translateX(50%);
   width: 908px;
   font-family: Tahoma, sans-serif;
 }
@@ -303,29 +303,168 @@ header input {
 
 /*Каталоги слева*/
 .left_search {
+  margin-top: 10px;
   width: 170px;
   float: left;
 }
 
 .left_search img {
+  margin: 2px;
+  padding: 2px;
   float: left;
+}
+
+.left_search div {
+  width: 150px;
+  border: 1px solid #a3a3a4;
+  border-radius: 15px;
+}
+
+.left_search div:first-of-type {
+  margin-bottom: 10px;
+  width: 170px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+}
+
+.left_search p {
+  margin: 8px;
+  text-transform: uppercase;
+  color: #114165;
+  font-size: 12px;
+}
+
+.left_search ul {
+  width: 170px;
+}
+
+.left_search li {
+  list-style: circle;
+}
+
+.left_search li a {
+  color: #465961;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.left_search li a:hover {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 /*Бренды*/
 .right_brands {
-  width: 130px;
+  margin-top: 10px;
+  width: 183px;
   float: right;
 }
 
 .right_brands img {
+  margin: 2px;
+  padding: 2px;
   float: left;
+}
+
+.right_brands div {
+  margin-left: 25px;
+  width: 130px;
+  border: 1px solid #a3a3a4;
+  border-radius: 15px;
+}
+
+.right_brands div:first-of-type {
+  margin: 0px 0px 10px 0px;
+  width: 183px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+}
+
+.right_brands p {
+  margin: 8px;
+  text-transform: uppercase;
+  color: #114165;
+  font-size: 12px;
+}
+
+.right_brands ul {
+  padding-left: 30px;
+  width: 130px;
+}
+
+.right_brands li {
+  list-style: none;
+}
+
+.right_brands li a {
+  color: #465961;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.right_brands span {
+  font-size: 12px;
+}
+
+.right_brands button {
+  margin-left: 30px;
+  width: 80px;
+  height: 30px;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #1f6585, #0d365a);
 }
 
 /*Центральная чать*/
 .main_cenrte {
+  position: absolute;
+  top: 520px;
+  left: 186px;
   width: 526px;
-  height: 900px;
+  height: 626px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #e4e7e8, #93a7b0);
+}
+
+.tovar {
+  margin: 15px;
+  width: 138px;
+  height: 173px;
   float: left;
-  border: 1px solid black;
-  background: linear-gradient(to bottom, #a3a3a4, #1f6787);
+  text-align: center;
+}
+
+.tovar p {
+  margin: 2px;
+  font-size: 12px;
+}
+
+.tovar a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  color: #206988;
+}
+
+.tovar p:last-of-type {
+  font-family: arial;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+  color: #114165;
+}
+
+.tovar span {
+  font-size: 16px;
+}
+
+.tovar img {
+  width: 138px;
+  height: 127px;
+  background: white;
+  border-radius: 15px;
+
 }
