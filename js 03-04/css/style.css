@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.container {             /*! Задаем размеры контейнера и выравниваем его по центру экрана*/
+  width: 800px;
+  height: 600px;
+  margin: auto;
+}
+
+.zag_cont {                /*! Задаем отступы для заголовка*/
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+.main_zag {                /*! Задаем стиль заголовка*/
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.question_list {           /*! Стилизуем список вопросов*/
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.check_question {         /*! Уменьшаем отступ для элементов списка*/
+  padding-left: 20px;
+}
+
+.check_li {              /*! стилизуем элементы списка*/
+  margin: 5px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.check_label {           /*! стилизуем текст ответов*/
+  height: 25px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.check_label input {   /*! Задаем размер инпутов*/
+  width: 15px;
+  height: 15px;
+}
+
+.result_button {     /*! Задаем размеры и стиль результирующей кнопки*/
+  width: 325px;
+  height: 50px;
+  margin: auto;
+  background: #cfe2f3;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.result_button a {       /*! Задаем стиль ссылки на кнопке*/
+  line-height: 48px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}

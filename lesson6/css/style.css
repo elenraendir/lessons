@@ -408,6 +408,10 @@ header input {
   font-size: 12px;
 }
 
+.right_brands input {
+  list-style:
+}
+
 .right_brands button {
   margin-left: 30px;
   width: 80px;
